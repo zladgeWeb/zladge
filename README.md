@@ -1,2 +1,2 @@
-# zladge
+# calculator
 My first web project - calculator
