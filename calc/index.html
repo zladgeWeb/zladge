@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор Xiaomi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="calculator">
+        <div class="top-bar">
+            <button onclick="toggleTheme()" id="theme-btn">🌙</button>
+        </div>
+        
+        <input type="text" id="display" disabled value="0">
+        
+        <div id="buttons">
+            <button onclick="appendToDisplay('sin(')" class="btn-gray font-small">sin</button>
+            <button onclick="appendToDisplay('cos(')" class="btn-gray font-small">cos</button>
+            <button onclick="appendToDisplay('tan(')" class="btn-gray font-small">tan</button>
+            <button onclick="appendToDisplay('log(')" class="btn-gray font-small">lg</button>
+            <button onclick="appendToDisplay('exp(')" class="btn-gray font-small">ln</button>
+
+            <button onclick="appendToDisplay('(')" class="btn-gray">(</button>
+            <button onclick="appendToDisplay(')')" class="btn-gray">)</button>
+            <button onclick="clearDisplay()" class="btn-orange-text">AC</button>
+            <button onclick="backspace()" class="btn-orange-text">←</button>
+            <button onclick="appendToDisplay('/')" class="btn-orange-text">/</button>
+
+            <button onclick="appendToDisplay('π')">π</button>
+            <button onclick="appendToDisplay('7')" class="btn-white">7</button>
+            <button onclick="appendToDisplay('8')" class="btn-white">8</button>
+            <button onclick="appendToDisplay('9')" class="btn-white">9</button>
+            <button onclick="appendToDisplay('*')" class="btn-orange-text">×</button>
+
+            <button onclick="appendToDisplay('1/')" class="font-small">1/x</button>
+            <button onclick="appendToDisplay('4')" class="btn-white">4</button>
+            <button onclick="appendToDisplay('5')" class="btn-white">5</button>
+            <button onclick="appendToDisplay('6')" class="btn-white">6</button>
+            <button onclick="appendToDisplay('-')" class="btn-orange-text">−</button>
+
+            <button onclick="appendToDisplay('0')" class="btn-white">0</button>
+            <button onclick="appendToDisplay('1')" class="btn-white">1</button>
+            <button onclick="appendToDisplay('2')" class="btn-white">2</button>
+            <button onclick="appendToDisplay('3')" class="btn-white">3</button>
+            <button onclick="appendToDisplay('+')" class="btn-orange-text">+</button>
+
+            <div class="empty-space"></div>
+            <div class="empty-space"></div>
+            <div class="empty-space"></div>
+            <div class="empty-space"></div>
+            <button onclick="calculate()" class="btn-equal">=</button>
+        </div>
+
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+</html>
